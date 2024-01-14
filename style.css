@@ -55,7 +55,9 @@ table {
 }
 /* OWN STYLES */
 
-
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
 }
@@ -84,6 +86,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.justify-start{
+    justify-content: flex-start;
+}
 .grow{
     flex:1 1 auto;
 }
@@ -95,6 +100,9 @@ body{
 }
 .flex-48{
     flex:0 1 48%;
+}
+.flex-50{
+    flex:0 1 50%;
 }
 .flex-wrap{
     flex-wrap: wrap;
@@ -156,7 +164,9 @@ a{
 .nav-item a:hover{
     color:var(--primary)
 }
-
+.nav-item .btn:hover{
+    color:white;
+}
 /* MAIN */
 
 /* HERO - SECTION */
@@ -326,4 +336,137 @@ a{
 }
 .classes-article a{
     margin-top: 24px;
+}
+
+
+/* Schedule-section */
+.schedule{
+    background: url(assets/media/schedule-bg.jpg) no-repeat;
+    padding:80px 0;
+    background-size: cover;
+}
+.schedule h3{
+    margin: 10px 0;
+    font-size:28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:white;
+}
+.schedule span{
+    color:var(--primary)
+}
+.schedule p {
+    margin-top: 10px;
+    color:white;
+    font-size: 14px;
+}
+
+.schedule-days {
+    margin-top: 50px;
+}
+.schedule-days .active{
+    color:var(--primary)
+}
+.schedule-days a {
+    color:white;
+}
+.schedule-days span{
+    margin:0 14px;
+    color:white;
+}
+
+table{
+    max-width:1100px;
+    margin: 0 auto;
+}
+td{
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    border: 1px solid white;
+    padding:32px 28px;
+}
+
+/* Trainers SEction */
+
+.trainers{
+    padding:80px 0;
+}
+.trainers h3{
+    margin: 10px 0;
+    font-size:28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:var(--textDark);
+}
+.trainers span{
+    color:var(--primary)
+}
+.trainers p {
+    margin-top: 10px;
+    color:var(--textLight);
+    font-size: 14px;
+}
+
+.trainer-item{
+    padding:30px;
+    border-radius:5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.322);
+}
+.trainer-item h4{
+    color:var(--primary);
+    font-size: 12px;
+    margin-top: 14px;
+}
+.trainer-item h5{
+    color:var(--textDark);
+    font-size: 20px;
+    font-weight: 700px;
+}
+.trainer-item p {
+    font-size: 14px;
+}
+.trainer-item li {
+    margin-right: 14px;
+    margin-top: 16px;
+}
+.trainer-item a{
+    color:var(--textDark);
+    font-size: 14px;
+} 
+
+.contact {
+    padding:30px 0;
+}
+.form-container{
+    background: url(assets/media/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    padding:50px 36px;
+    border-radius: 2px;
+}
+form{
+    background-color: white;
+    padding:30px;
+}
+.form-control{
+    display: block;
+    width:100%;
+    border: 1px solid #e7e5e5;
+    padding: 12px ;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+
+.footer{
+    padding: 36px 0;
+    text-align: center;
+}
+.footer small {
+    color: var(--textDark);
+    font-size: 14px;
+}
+.footer  span{
+    color:var(--primary) ;
 }
